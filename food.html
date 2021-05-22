@@ -47,10 +47,9 @@
       </header>
       <section class="home-area" id="home">
         <div class="home-img"></div>
-        <h1>Welcome Aboard</h1>
+        <h1 class="headline">Welcome Aboard</h1>
         <p class="desc">"Dive into a variety of home-cooked recipes"</p>
-
-        <a href="#about"><i class="fas fa-arrow-alt-circle-down"></i></a>
+        <a href="#about" class="down"><i class="fas fa-arrow-alt-circle-down"></i></a>
       </section>
       <section class="about-area" id="about">
         <h3 class="section-title">ABOUT US</h3>
@@ -58,7 +57,7 @@
           <li class="about-left"></li>
           <li class="about-right">
             <h3>A QUICK GLIMPSE</h3>
-            <p>
+            <p class="para">
               <em>"</em>
               Food is the eternal way of reaching a wide range of happy hearts,
               Being able to be part of the journey to spread a few glimpses is
@@ -155,5 +154,22 @@
     <footer>
       <p>All rights reserved.</p>
     </footer>
+ <!--     <script>
+   window.addEventListener("scroll",function(){
+          const parallax=document.querySelector(".headline");
+          let scrollPosition=window.pageYOffset;
+          parallax.style.transform='translateY('+scrollPosition*-0.4+'px)';
+      });
+      window.addEventListener("scroll",function(){
+          const parallax=document.querySelector(".desc");
+          let scrollPosition=window.pageYOffset;
+          parallax.style.transform='translateY('+scrollPosition*-0.4+'px)';
+      });
+      window.addEventListener("scroll",function(){
+          const parallax=document.querySelector(".down");
+          let scrollPosition=window.pageYOffset;
+          parallax.style.transform='translateY('+scrollPosition*-0.4+'px)'; 
+      });-->
+  </script>
   </body>
 </html>
