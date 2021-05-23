@@ -280,7 +280,7 @@ ul.about-content
 @media(max-width:420px)
 {
     .about-right p{
-        font-size:14px;
+        font-size:20px;
         padding:0px;
     } 
 }
