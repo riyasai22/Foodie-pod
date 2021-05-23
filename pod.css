@@ -77,10 +77,9 @@ header nav{
 }
 header nav li
 {
-    margin:0 15px;
+    margin:0 7px;
     background-color:rgb(81, 147, 150);
-    padding:10px;
-    transform:margin 10sec;
+    padding:8px;
 }
 header nav li:hover
 {
@@ -113,7 +112,8 @@ header nav li:last-child
     }
     header nav li
     {
-        margin:0 7px;
+        margin:0 3px;
+        font-size:13.5px;
     }
 }
 .home-area
@@ -241,7 +241,7 @@ ul.about-content
 }
 .about-right h3
 {
-    padding-left:50px;
+    text-align:center;
     padding-top:40px;
     font-size:30px; 
     margin-bottom:10px;
@@ -250,21 +250,41 @@ ul.about-content
 }
 .about-right p
 {
-    padding-left:50px; 
+    display:flex;
     max-width:500px;
     text-align:left;
-    font-size:17px;
+    font-size:10vh;
     font-weight:600;
     color:rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
+}
+@media(max-width:1200px)
+{
+    .about-right p{
+        font-size:13px;
+    }
 }
 @media(max-width:1000px)
 {
     .about-left,.about-right{
         flex-basis:100%;
-        background-attachment: fixed;;
+        background-attachment: fixed;
     }
+    .about-right p{
+        font-size:17px;
+        max-width:800px;
+        text-align:center;
+    } 
 }
+
+@media(max-width:420px)
+{
+    .about-right p{
+        font-size:12px;
+        padding:0px;
+    } 
+}
+
 .catalog-area
 {
     color:white;
